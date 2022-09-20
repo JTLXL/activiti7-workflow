@@ -29,3 +29,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### 忽略 windows 日志目录
+c:
