@@ -29,7 +29,7 @@ public class Part4_Task {
     @Test
     public void getTasksByAssignee(){
         List<Task> list = taskService.createTaskQuery()
-                .taskAssignee("bajie")
+                .taskAssignee("wukong")
                 .list();
         for(Task tk : list){
             System.out.println("Id："+tk.getId());
@@ -42,7 +42,7 @@ public class Part4_Task {
     //执行任务
     @Test
     public void completeTask(){
-        taskService.complete("d07d6026-cef8-11ea-a5f7-dcfb4875e032");
+        taskService.complete("b90aeae5-39ce-11ed-aea2-b652b770205c");
         System.out.println("完成任务");
 
     }

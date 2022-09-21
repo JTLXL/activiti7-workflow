@@ -19,7 +19,7 @@ public class Part1_Deployment {
     //通过bpmn部署流程
     @Test
     public void initDeploymentBPMN(){
-        String filename="BPMN/Part4_Task_claim.bpmn";
+        String filename="resources/bpmn/e387c111-4c96-4f64-a759-1238e9faa40b.bpmn";
         // String pngname="BPMN/Part1_Deployment.png";
         Deployment deployment=repositoryService.createDeployment()
                 .addClasspathResource(filename)
