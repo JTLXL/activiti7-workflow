@@ -58,8 +58,10 @@ public class Part4_Task {
     @Test
     public void setTaskAssignee(){
         Task task = taskService.createTaskQuery().taskId("1f2a8edf-cefa-11ea-84aa-dcfb4875e032").singleResult();
-        taskService.setAssignee("1f2a8edf-cefa-11ea-84aa-dcfb4875e032","null");//归还候选任务
-        taskService.setAssignee("1f2a8edf-cefa-11ea-84aa-dcfb4875e032","wukong");//交办
+        //归还候选任务
+        taskService.setAssignee("1f2a8edf-cefa-11ea-84aa-dcfb4875e032","null");
+        //交办
+        taskService.setAssignee("1f2a8edf-cefa-11ea-84aa-dcfb4875e032","wukong");
     }
 
 

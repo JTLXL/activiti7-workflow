@@ -37,7 +37,7 @@ public class Part5_HistoricTaskInstance {
         List<HistoricTaskInstance> list = historyService
                 .createHistoricTaskInstanceQuery()
                 .orderByHistoricTaskInstanceEndTime().asc()
-                .processInstanceId("1f2314cb-cefa-11ea-84aa-dcfb4875e032")
+                .processInstanceId("d630423a-39c9-11ed-bec6-b652b770205c")
                 .list();
         for(HistoricTaskInstance hi : list){
             System.out.println("Id："+ hi.getId());
